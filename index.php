@@ -2,6 +2,8 @@
 
 
 
+
+
 <h2>Steam Apps Path</h2>
 <?php
 $steamAppsPath = 'D:/Program Files (x86)/Steam/steamapps/';
@@ -13,6 +15,8 @@ if(!is_dir($steamAppsPath)){
 $steamAppsPath = dirname($steamAppsPath).'/';
 print"<br><br><br>";
 ?>
+
+
 
 
 
@@ -43,6 +47,8 @@ function getConfFiles ($path)
 $files = getConfFiles("steamapps/");
 print"<br><br><br>";
 ?>
+
+
 
 
 
@@ -82,4 +88,11 @@ function InstallConfFiles ($steamAppsPath, $files)
 }
 InstallConfFiles($steamAppsPath, $files);
 print"<br><br><br>";
+?>
 
+
+
+
+
+<h1>Installation Complete!</h1>
+print"<br><br><br>";
